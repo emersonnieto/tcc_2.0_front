@@ -1,0 +1,38 @@
+ul {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: 100%;
+    background-color: rgb(40, 61, 41);
+}
+
+li {
+    padding: 10px;
+    list-style-type: none;
+    background-color: rgb(40, 61, 41);
+    text-align: center;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    background-color: rgb(40, 61, 41);
+    font-size: 1.2em;
+}
+
+a:hover {
+    color: #FFBF00;
+}
+
+.right-container {
+    display: flex;
+    margin-left: auto;
+}
+
+.li-right {
+    margin-left: 0;
+    margin-right: 0;
+}
