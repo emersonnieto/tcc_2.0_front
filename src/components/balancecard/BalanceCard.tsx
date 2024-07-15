@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './BalanceCard.css';
 
 interface TransactionSummary {
-  totalIncome: string; // Alterado para string para lidar com números que chegam como strings
-  totalExpense: string; // Alterado para string para lidar com números que chegam como strings
-  currentBalance: string; // Alterado para string para lidar com números que chegam como strings
+  totalIncome: string; 
+  totalExpense: string; 
+  currentBalance: string; 
 }
 
 const BalanceCard: React.FC = () => {
@@ -63,7 +64,7 @@ const BalanceCard: React.FC = () => {
   return (
     <div className="transaction-summary-card">
       <h3>Resumo de Transações</h3>
-      <div>
+      <div className='result-transaction'>
         <p>Total de Entrada: R$ {parseFloat(summary.totalIncome).toFixed(2)}</p>
         <p>Total de Saída: R$ {parseFloat(summary.totalExpense).toFixed(2)}</p>
         <p>Saldo Atual: R$ {parseFloat(summary.currentBalance).toFixed(2)}</p>

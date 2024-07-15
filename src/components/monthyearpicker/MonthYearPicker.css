@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  height: 60px;
+}
+
+.select {
+  font-size: 14px;
+  padding: 5px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.label{
+  padding: 5px;
+}

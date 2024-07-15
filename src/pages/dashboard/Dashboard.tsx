@@ -4,14 +4,21 @@ import { useNavigate } from "react-router-dom";
 import "./Dashboard.css";
 import Navbar from "../../components/navbar/Navbar";
 import BalanceCard from "../../components/balancecard/BalanceCard";
+import NotificationCard from "../../components/notificationcard/NotificationCard";
+import MonthYearPicker from "../../components/monthyearpicker/MonthYearPicker";
+
 const Dashborad: React.FC = () => {
   return (
-    <>
-      <main>
+    <div className="main">
       <Navbar />
-      <BalanceCard />
-      </main>
-    </>
+      <div className="monthyearpicker">
+        <MonthYearPicker />
+      </div>
+      <div className="cards">
+        <BalanceCard />
+        <NotificationCard />
+      </div>
+    </div>
   );
 };
 export default Dashborad;
